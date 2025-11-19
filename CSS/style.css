@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.card {
+    /* width: 300px;
+    height: 400px; */
+    border: none;
+
+}
+
+.fa-color-yellow{
+    color: #ffcc00;
+
+}
+
+.card-title-color{
+    color: #25b143;
+}
