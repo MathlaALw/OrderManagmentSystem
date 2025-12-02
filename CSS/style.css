@@ -154,16 +154,12 @@
     border-radius: 0.5rem;
     height: 46px;
 }
-
-.footer-share-btn {
+.footer-share-btn{
     background-color: #0AAD0A;
-    border-color: #0AAD0A;
     color: #fff;
-    padding: 0 40px;
     border-radius: 0.5rem;
-    height: 46px;
-    font-weight: 500;
-    
+    border: none;
+   
 }
 
 
