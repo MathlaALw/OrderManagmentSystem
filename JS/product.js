@@ -72,7 +72,8 @@ async function displayProductData() {
                     </div>
 
                     <div class="mt-auto d-flex gap-2 justify-content-between">
-                        <button class="product-btn btn-sm">view</button>
+                    
+                        <button class="product-btn btn-sm" onclick="window.location.href='productDetails.html?id=${product._id}'">View</button>
                         <button class="product-btn btn-sm">Wish List</button>
                     </div>
 

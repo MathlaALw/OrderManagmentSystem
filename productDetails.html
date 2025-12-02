@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management System</title>
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!-- page icon -->
+    <link rel="icon" type="image/svg+xml" href="./img/LOGO/cart.svg">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container justify-content-between">
+            <a href="index.html"><img src="./Img/LOGO/freshcart-logo.svg" alt="logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-2">
+                    <div class="navbar-nav ">
+                        <a class="nav-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="nav-link" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="nav-link" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                        <a class="nav-link" href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="nav-link" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a class="nav-link" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="navbar-nav ">
+                        <a class="nav-link" href="login.html">Login</i></a>
+                        <a class="nav-link" href="register.html">Register</a>
+                        <div class="navbar-nav ">
+
+                        </div>
+                    </div>
+                </div>
+    </nav>
+<section class="ProductDetails py-5">
+    <div class="container details-wrapper">
+        
+        <!-- Loader (same size as details container) -->
+        <div id="loader" class="loader-container d-flex justify-content-center align-items-center">
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- details content -->
+        <div class="d-none" id="detailsContent">
+            <div class="row align-items-center gy-4">
+
+                <!-- Image side with carousel -->
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                    <div id="productCarousel" class="carousel slide">
+                        <div class="carousel-inner" id="carouselInner">
+                            <!-- JS will inject slides here -->
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Text  -->
+                <div class="col-12 col-lg-6">
+                    <h2 id="detailsTitle" class="mb-2"></h2>
+                    <h4 id="detailsBrand" class="mb-2"></h4>
+
+                    <p id="detailsCategory" class="text-muted mb-1"></p>
+                    <p id="detailsDescription" class="text-muted mb-3"></p>
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span id="detailsPrice" class="fw-bold fs-4"></span>
+                        <span class="detailsRatingText">
+                            <i class="fa-solid fa-star star-color"></i>
+                            <span id="detailsRating"></span>
+                        </span>
+                    </div>
+
+                    <button class="btn-lg w-100 details-add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- JS FILES -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/all.min.js"></script>
+    <script src="./JS/productDetails.js"></script>
+</body>
+
+
+</html>

@@ -64,13 +64,14 @@
 /* Price + rating */
 .product-price {
     font-weight: 600;
+
 }
 
 .star-color {
     color: #FFC107;
 }
 
-/* Buttons (border → filled on hover) */
+
 .product-btn {
     border: 1px solid #0AAD0A;
     color: #0AAD0A;
@@ -85,4 +86,47 @@
 .product-btn:hover {
     background-color: #0AAD0A;
     color: #fff;
+}
+
+
+.details-add-btn {
+    background-color: #0AAD0A;
+    color: #fff;
+    border-radius: 999px;
+    border: none;
+    font-weight: 500;
+}
+
+.details-add-btn:hover {
+    background-color: #079707;
+    color: #fff;
+}
+
+
+/* Wrapper that defines the shared size */
+.details-wrapper {
+    min-height: 400px;  /* height for both loader + details */
+    position: relative;
+}
+
+/* Loader matches details wrapper */
+.loader-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Spinner size + speed */
+#loader .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    animation-duration: 0.7s;
+}
+
+/* When detailsContent has dynamic height, apply same height to loader */
+.ProductDetails {
+    position: relative;
+}
+
+#loader {
+    width: 100%;
 }
