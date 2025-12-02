@@ -130,3 +130,51 @@
 #loader {
     width: 100%;
 }
+
+
+/* Footer main block */
+.app-footer {
+    background-color: #f5f7f8;   /* light grey like screenshot */
+    font-size: 0.95rem;
+}
+
+/* Title + text */
+.footer-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.footer-text {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Email form */
+.footer-form .form-control {
+    border-radius: 0.5rem;
+    height: 46px;
+}
+
+.footer-share-btn {
+    background-color: #0AAD0A;
+    border-color: #0AAD0A;
+    color: #fff;
+    padding: 0 40px;
+    border-radius: 0.5rem;
+    height: 46px;
+    font-weight: 500;
+    
+}
+
+
+
+.store-badge {
+    height: 50px;
+    object-fit: contain;
+}
+
+.store-badge:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    color: #0AAD0A;
+}
